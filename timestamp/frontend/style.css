@@ -1,0 +1,78 @@
+/* colors to use */
+:root {
+    --background: #FFFFFF;
+    --accent_1: #1A0000;
+    --accent_2: rgba(89, 206, 143, 0.16);
+    --font_color: #FFFF;
+    --secondary-font-color: #1A0000;
+
+}
+
+#logo {
+    margin: 2%;
+}
+
+#main-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    background-color: var(--accent_2);
+    height: 90%;
+    width: 90%; 
+}
+
+#content-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#add-stamp {
+    background-color: yellow;
+    padding: 2%;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--background);
+    color: black;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--font_color);
+}
+
+li {
+    list-style: none;
+}
+
+#main-header {
+    background-color: #000;
+    display: flex;
+    flex-direction: row;
+}
+
+#main-header nav ul{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 60%;
+}
+
+#mai-header nav ul li {
+    padding: 10px;
+}
+
+#main-header nav ul a:hover {
+    font-size: larger;
+
+}
+

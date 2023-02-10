@@ -5,27 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TimeStamp | Make Entry</title>
+    <link rel="stylesheet" href="style.css">
     <script src="app.js" defer></script>
 </head>
 <body>
-    <header>
-        <h2>TimeStamp</h2>
+    <header id="main-header">
+        <h2 id="logo"><a href="index.html">TimeStamp</a></h2>
         <nav>
             <ul>
                 <li><a href="make_entry.html">Make an Entry</a></li>
-                <li><a href="#">See Entries</a></li>
+                <li><a href="see_entries.html" id="entries-link">See Entries</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section>
+    <main id="main-body">
+        <section id="content-section">
             <form id="soft">
                 <label for="username">Username: </label>
                 <input type="text" name="username" id="username">
                 <label for="message">Message/Quote:</label>
                 <input type="text" name="message" id="message">
 
-                <input type="submit" value="Submit">
+                <button type="submit" onclick="getNameAndMessage()">Submit</button>
             </form> 
         </section>
             
