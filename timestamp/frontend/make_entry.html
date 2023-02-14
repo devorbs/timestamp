@@ -20,13 +20,13 @@
     </header>
     <main id="main-body">
         <section id="content-section">
-            <form id="soft">
-                <label for="username">Username: </label>
-                <input type="text" name="username" id="username">
-                <label for="message">Message/Quote:</label>
-                <input type="text" name="message" id="message">
+            <form id="entry-form">
+                <label for="username">Input your username: </label>
+                <input type="text" name="username" id="username" autofocus required>
+                <label for="message">What's your message for the future?</label>
+                <textarea name="message" rows="5" id="message"></textarea>
 
-                <button type="submit" onclick="getNameAndMessage()">Submit</button>
+                <button id="submit" type="submit" onclick="getNameAndMessage()"><a href="see_entries.html" id="entry-link">Submit</a></button>
             </form> 
         </section>
             

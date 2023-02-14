@@ -42,17 +42,21 @@ function getNameAndMessage() {
     post_div.className = 'post-container';
     elPosts.appendChild(post_div)
 
-    const name_divs = document.createElement("span");
-    name_divs.className = 'name-content';
-    post_div.appendChild(name_divs)
-
     const picture_divs = document.createElement("div");
     picture_divs.className = 'img-content';
     post_div.appendChild(picture_divs)
 
+    const user = document.createElement("div")
+    user.id = 'user'
+    post_div.appendChild(user)
+
+    const name_divs = document.createElement("span");
+    name_divs.className = 'name-content';
+    user.appendChild(name_divs)
+
     const message_divs = document.createElement("span");
     message_divs.className = 'message-content';
-    post_div.appendChild(message_divs)
+    user.appendChild(message_divs)
     
   }
 
